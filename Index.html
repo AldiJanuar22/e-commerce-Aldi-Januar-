@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldi Store - Toko Fashion Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">Aldi Store</a>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+        <a href="#" class="cart-icon">
+          🛒
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda">
+        <section class="hero">
+          <h1>Selamat Datang di AldiStore</h1>
+          <p>Temukan fashion terbaru dengan harga terjangkau</p>
+          <a href="#produk" class="cta-button">Belanja Sekarang</a>
+        </section>
+      </section>
+
+      <section id="produk">
+        <h2>Produk Terbaru</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image">🥾</div>
+            <div class="product-info">
+              <h3 class="product-name">Sepatu high boots</h3>
+              <p class="product-description">
+                High boots elegan dan maskulin, dirancang untuk tampil berkelas dan tahan lama. Terbuat dari 100 % kulit sapi asli premium yang berkualitas tinggi, cocok untuk aktivitas outdoor maupun acara formal.
+              </p>
+              <div class="product-price">Rp 800.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">👕</div>
+            <div class="product-info">
+              <h3 class="product-name">kaos polos pria&wanita</h3>
+              <p class="product-description">
+                Kaos polos dengan desain minimalis dan bahan berkualitas tinggi, cocok untuk segala aktivitas sehari‑hari. Tampil kasual namun tetap rapi, bisa dipadu-padankan dengan berbagai gaya.
+              </p>
+              <div class="product-price">Rp 100.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">🧳</div>
+            <div class="product-info">
+              <h3 class="product-name">Koper Baller</h3>
+              <p class="product-description">
+                Material Ringan & Kuat: Bodinya terbuat dari polycarbonate dengan bingkai aluminium, menawarkan keseimbangan optimal antara fleksibilitas dan proteksi
+              </p>
+              <div class="product-price">Rp 3.000.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+      <section id="kategori">
+        <h2>Kategori produk</h2>
+        <div class="categories">
+          <div class="category-card">
+            <div class="category-icon">🥾</div>
+            <h3>Sepatu high boots</h3>
+            <p>Sepatunya terbuat dari kulit sapi asli100%</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">👕</div>
+            <h3>Kaos Polos pria&wanita</h3>
+            <p>Kaos Polos dengan bahan yang berkualitas premium </p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🧳</div>
+            <h3>Koper Baller</h3>
+            <p>Bahannya kuat dan muat banyak barang</p>
+          
+      <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+          <p>
+            AldiStore adalah toko Fashion online terpercaya yang menyediakan
+            berbagai pakaian,sepatu,dan koper terbaru dengan kualitas
+            terjamin.
+          </p>
+          <p>
+            Kami berkomitmen untuk memberikan pengalaman berbelanja yang mudah,
+            aman, dan memuaskan dengan layanan pelanggan terbaik dan jaminan
+            produk original.
+          </p>
+          <p>
+            Dengan pengalaman lebih dari 10 tahun di industri teknologi, kami
+            telah melayani ribuan pelanggan di seluruh Indonesia dengan kepuasan
+            mencapai 98%.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AldiStore</h3>
+          <p>
+            Toko fashion online terpercaya dengan produk berkualitas dan
+            pelayanan terbaik.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Tautan Cepat</h3>
+          <p><a href="#">Beranda</a></p>
+          <p><a href="#produk">Produk</a></p>
+          <p><a href="#kategori">Kategori</a></p>
+          <p><a href="#tentang">Tentang Kami</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Layanan</h3>
+          <p><a href="#">Bantuan</a></p>
+          <p><a href="#">Kebijakan Privasi</a></p>
+          <p><a href="#">Syarat & Ketentuan</a></p>
+          <p><a href="#">Pengembalian</a></p>
+        </div>
+        <div class="footer-section">
+          <section id="kontak">
+            <h3>Kontak</h3>
+            <p>Email: fashion@aldistore.com</p>
+            <p>Telepon: (021) 835-436-442</p>
+            <p>WhatsApp: +62 823-1658-0142</p>
+          </section>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AldiStore. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+          </html>
