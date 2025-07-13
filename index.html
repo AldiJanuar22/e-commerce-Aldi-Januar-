@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldi Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aldi Store</h1>
+        <nav>
+            <a href="#" onclick="showSection('products')">Produk</a>
+            <a href="#" onclick="showSection('cart-section')">Keranjang (<span id="cart-count">0</span>)</a>
+            <a href="#" onclick="showSection('contact')">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="products" class="active">
+        <div class="product-card" data-id="1">
+            <img src="images/Produk 1.jpeg" alt="Longsleeve Deathless">
+            <h3>Longsleeve Deathless</h3>
+            <p>Rp 150.000</p>
+            <button onclick="addToCart(1, 'Longsleeve Deathless', 150000)">Tambah ke Keranjang</button>
+            <button onclick="buyNow(1, 'Longsleeve Deathless', 150000)">Beli Sekarang</button>
+        </div>
+
+        <div class="product-card" data-id="2">
+            <img src="images/Produk 2.jpeg" alt="White Longsleeve">
+            <h3>White Longsleeve</h3>
+            <p>Rp 170.000</p>
+            <button onclick="addToCart(2, 'White Longsleeve', 170000)">Tambah ke Keranjang</button>
+            <button onclick="buyNow(2, 'White Longsleeve', 170000)">Beli Sekarang</button>
+        </div>
+
+        <div class="product-card" data-id="3">
+            <img src="images/Produk3.jpeg" alt="Whisper T-shirt Longsleeve">
+            <h3>Whisper T-shirt Longsleeve</h3>
+            <p>Rp 185.000</p>
+            <button onclick="addToCart(3, 'Whisper T-shirt Longsleeve', 185000)">Tambah ke Keranjang</button>
+            <button onclick="buyNow(3, 'Whisper T-shirt Longsleeve', 185000)">Beli Sekarang</button>
+        </div>
+
+        <div class="product-card" data-id="4">
+            <img src="images/Produk 4.jpeg" alt="Longsleeve Deathless Black">
+            <h3>Longsleeve Deathless Black</h3>
+            <p>Rp 200.000</p>
+            <button onclick="addToCart(4, 'Longsleeve Deathless Black', 200000)">Tambah ke Keranjang</button>
+            <button onclick="buyNow(4, 'Longsleeve Deathless Black', 200000)">Beli Sekarang</button>
+        </div>
+
+        <div class="product-card" data-id="5">
+            <img src="images/Produk 5.jpeg" alt="Grdt-Baph T-Shirt Longsleeve">
+            <h3>Grdt-Baph T-Shirt Longsleeve</h3>
+            <p>Rp 250.000</p>
+            <button onclick="addToCart(5, 'Grdt-Baph T-Shirt Longsleeve', 250000)">Tambah ke Keranjang</button>
+            <button onclick="buyNow(5, 'Grdt-Baph T-Shirt Longsleeve', 250000)">Beli Sekarang</button>
+        </div>
+    </section>
+
+    <section id="cart-section">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            Total: <span id="cart-total">Rp 0</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Jika ada pertanyaan, hubungi kami di:</p>
+        <ul>
+            <li>WhatsApp: <a href="https://wa.me/082216580142" target="_blank">+62 82316580142</a></li>
+            <li>Instagram: <a href="https://instagram.com/aldistore" target="_blank">@aldistore</a></li>
+            <li>Email: <a href="mailto:aldistore@example.com">aldistore@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Aldi Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
